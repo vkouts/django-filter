@@ -6,7 +6,6 @@ from datetime import timedelta
 from django import forms
 from django.db.models import Q
 from django.db.models.constants import LOOKUP_SEP
-from django.db.models.sql.constants import QUERY_TERMS
 from django.utils import six
 from django.utils.itercompat import is_iterable
 from django.utils.timezone import now
