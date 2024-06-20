@@ -6,10 +6,10 @@ from datetime import timedelta
 from django import forms
 from django.db.models import Q
 from django.db.models.constants import LOOKUP_SEP
-from django.utils import six
+import six
 from django.utils.itercompat import is_iterable
 from django.utils.timezone import now
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .compat import pretty_name
 from .conf import settings
