@@ -11,7 +11,7 @@ from django.db.models.fields.related import ForeignObjectRel, RelatedField
 from django.forms import ValidationError
 from django.utils import timezone
 import six
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str as force_text
 from django.utils.text import capfirst
 from django.utils.translation import ugettext as _
 
