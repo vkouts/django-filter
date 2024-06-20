@@ -6,7 +6,7 @@ from django.core.exceptions import FieldError
 from django.db import models
 from django.db.models.constants import LOOKUP_SEP
 from django.db.models.expressions import Expression
-from django.db.models.fields import FieldDoesNotExist
+from django.core.exceptions import FieldDoesNotExist
 from django.db.models.fields.related import ForeignObjectRel, RelatedField
 from django.forms import ValidationError
 from django.utils import six, timezone
