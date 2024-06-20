@@ -9,7 +9,8 @@ from django.db.models.expressions import Expression
 from django.core.exceptions import FieldDoesNotExist
 from django.db.models.fields.related import ForeignObjectRel, RelatedField
 from django.forms import ValidationError
-from django.utils import six, timezone
+from django.utils import timezone
+import six
 from django.utils.encoding import force_text
 from django.utils.text import capfirst
 from django.utils.translation import ugettext as _
