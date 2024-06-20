@@ -13,7 +13,7 @@ from django.utils import timezone
 import six
 from django.utils.encoding import force_str as force_text
 from django.utils.text import capfirst
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from .compat import make_aware, remote_field, remote_model
 from .exceptions import FieldLookupError
