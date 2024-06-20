@@ -12,7 +12,7 @@ from django.utils.datastructures import MultiValueDict
 from django.utils.encoding import force_str as force_text
 from django.utils.http import urlencode
 from django.utils.safestring import mark_safe
-from django.utils.six import string_types
+from six import string_types
 from django.utils.translation import gettext as _
 
 from .compat import format_value
