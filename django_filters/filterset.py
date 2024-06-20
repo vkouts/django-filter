@@ -7,7 +7,7 @@ from django import forms
 from django.db import models
 from django.db.models.constants import LOOKUP_SEP
 from django.db.models.fields.related import ForeignObjectRel
-from django.utils import six
+import six
 
 from .compat import remote_field, remote_queryset
 from .conf import settings
