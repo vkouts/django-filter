@@ -4,7 +4,7 @@ from __future__ import absolute_import
 import warnings
 
 from django.template import loader
-from django.utils import six
+import six
 
 from . import filters, filterset
 from .. import compat
