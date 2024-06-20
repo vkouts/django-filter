@@ -1,6 +1,6 @@
 from __future__ import absolute_import, unicode_literals
 
-from collections import Iterable
+from collections.abc import Iterable
 from itertools import chain
 from re import search, sub
 
@@ -9,11 +9,11 @@ from django import forms
 from django.db.models.fields import BLANK_CHOICE_DASH
 from django.forms.utils import flatatt
 from django.utils.datastructures import MultiValueDict
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str as force_text
 from django.utils.http import urlencode
 from django.utils.safestring import mark_safe
-from django.utils.six import string_types
-from django.utils.translation import ugettext as _
+from six import string_types
+from django.utils.translation import gettext as _
 
 from .compat import format_value
 

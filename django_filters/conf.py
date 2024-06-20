@@ -3,7 +3,7 @@ from __future__ import absolute_import
 
 from django.conf import settings as dj_settings
 from django.core.signals import setting_changed
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .constants import STRICTNESS
 from .utils import deprecate

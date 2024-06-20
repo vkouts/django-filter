@@ -6,13 +6,14 @@ from django.core.exceptions import FieldError
 from django.db import models
 from django.db.models.constants import LOOKUP_SEP
 from django.db.models.expressions import Expression
-from django.db.models.fields import FieldDoesNotExist
+from django.core.exceptions import FieldDoesNotExist
 from django.db.models.fields.related import ForeignObjectRel, RelatedField
 from django.forms import ValidationError
-from django.utils import six, timezone
-from django.utils.encoding import force_text
+from django.utils import timezone
+import six
+from django.utils.encoding import force_str as force_text
 from django.utils.text import capfirst
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from .compat import make_aware, remote_field, remote_model
 from .exceptions import FieldLookupError
